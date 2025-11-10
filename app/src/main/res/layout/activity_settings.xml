@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_header"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/settingsBlock"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/settingsBlock"
+        style="@style/SettingsBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingsTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/spacing_standard"
+            android:text="@string/settings_difficulty_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_subheader" />
+
+        <RadioGroup
+            android:id="@+id/cardCountRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_8_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@drawable/radio_button_selector"
+                android:paddingStart="@dimen/spacing_standard"
+                android:text="@string/settings_difficulty_8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_body"
+                app:buttonTint="@color/radio_button_tint" />
+
+            <RadioButton
+                android:id="@+id/radio_12_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:background="@android:color/transparent"
+                android:button="@drawable/radio_button_selector"
+                android:paddingStart="@dimen/spacing_standard"
+                android:text="@string/settings_difficulty_12"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_body"
+                app:buttonTint="@color/radio_button_tint" />
+
+            <RadioButton
+                android:id="@+id/radio_16_cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:background="@android:color/transparent"
+                android:button="@drawable/radio_button_selector"
+                android:paddingStart="@dimen/spacing_standard"
+                android:text="@string/settings_difficulty_16"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_body"
+                app:buttonTint="@color/radio_button_tint" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/backButton"
+        style="@style/PrimaryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_xlarge"
+        android:layout_marginEnd="@dimen/spacing_xlarge"
+        android:layout_marginBottom="@dimen/spacing_huge"
+        android:text="@string/settings_button_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

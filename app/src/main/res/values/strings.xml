@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Меморина</string>
+
+    <string name="start_button_play">Начать игру</string>
+    <string name="start_button_settings">Игровой процесс</string>
+
+    <string name="settings_title">Игровой процесс</string>
+    <string name="settings_difficulty_title">Сложность игры</string>
+    <string name="settings_difficulty_8">8 карт</string>
+    <string name="settings_difficulty_12">12 карт</string>
+    <string name="settings_difficulty_16">16 карт</string>
+    <string name="settings_button_back">Назад</string>
+
+    <string name="game_win_title">Победа!</string>
+    <string name="game_button_restart">Начать заново</string>
+    <string name="game_button_back">Назад</string>
+
+</resources>

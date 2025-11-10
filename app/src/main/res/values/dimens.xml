@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_standard">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    <dimen name="spacing_huge">64dp</dimen>
+
+    <dimen name="text_size_header">48sp</dimen>
+    <dimen name="text_size_subheader">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_win">60sp</dimen>
+
+    <dimen name="corner_radius_standard">16dp</dimen>
+    <dimen name="button_padding_vertical">12dp</dimen>
+    <dimen name="card_padding">2dp</dimen>
+    <dimen name="stroke_width_standard">2dp</dimen>
+</resources>

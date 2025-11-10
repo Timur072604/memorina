@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.app.AspectRatioImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_image"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_shape_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="@dimen/card_padding"
+    android:scaleType="centerInside"
+    android:src="@drawable/card_back" />
